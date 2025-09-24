@@ -1,0 +1,40 @@
+[core]
+	editor = nvim
+[init]
+	defaultBranch = master
+[user]
+	name = Rune Espenakk
+	email = espenakk@outlook.com 
+	signingkey = ~/.ssh/signing_key.pub
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+	verbose = true
+[alias]
+	lg = log --all --decorate --oneline --graph
+	lg2 = log --all --decorate --graph --stat
+	lg3 = log --graph --abbrev-commit --decorate --date=relative --all
+[pull]
+	rebase = true
+[merge]
+	conflictStyle = zdiff3
+[rebase]
+	autosquash = true
+	autostash = true
+[rerere]
+	enabled = true
+[help]
+	autocorrect = immediate
+[diff]
+	algorithm = histogram
+	submodule = log
+[status]
+	submoduleSummary = true
+[submodule]
+	recurse = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

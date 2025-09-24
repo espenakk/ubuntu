@@ -1,0 +1,15 @@
+# Apt packages
+git
+tmux
+neovim
+bat
+stow
+build-essential
+bash-completion
+gpg
+
+# Third-party installers
+CUSTOM:curl -sS https://starship.rs/install.sh | sh -s -- --yes
+CUSTOM:curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+CUSTOM:eza
+CUSTOM:fastfetch
